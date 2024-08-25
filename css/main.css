@@ -663,3 +663,18 @@ body.noMask #description {
 #dropMenu > div:hover {
 	text-decoration: underline;
 }
+
+
+.background-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-FHk2QooyoEwRZhkyl7J9d9Kik0Zpe2JpiA&s');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Pushes the background image behind other elements */
+	opacity: 0.25;
+}

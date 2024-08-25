@@ -29,9 +29,9 @@ var World = {
   BASE_WATER: 10,
   MOVES_PER_FOOD: 2,
   MOVES_PER_WATER: 1,
-  DEATH_COOLDOWN: 120,
+  DEATH_COOLDOWN: 1,
   FIGHT_CHANCE: 0.20,
-  BASE_HEALTH: 10,
+  BASE_HEALTH: 100000,
   BASE_HIT_CHANCE: 0.8,
   MEAT_HEAL: 8,
   MEDS_HEAL: 20,
@@ -68,15 +68,15 @@ var World = {
       cooldown: 2
     },
     'bayonet': {
-      verb: _('thrust'),
+      verb: _('Banzai'),
       type: 'melee',
       damage: 8,
       cooldown: 2
     },
     'rifle': {
-      verb: _('shoot'),
+      verb: _('destroy'),
       type: 'ranged',
-      damage: 5,
+      damage: 5000000000, //5
       cooldown: 1,
       cost: { 'bullets': 1 }
     },
@@ -99,7 +99,7 @@ var World = {
       type: 'ranged',
       damage: 'stun',
       cooldown: 15,
-      cost: { 'bolas': 1 }
+      cost: { 'bolas': 0 }
     },
     'plasma rifle': {
       verb: _('disintigrate'),
