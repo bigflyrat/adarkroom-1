@@ -31,7 +31,7 @@ var World = {
   MOVES_PER_WATER: 1,
   DEATH_COOLDOWN: 1,
   FIGHT_CHANCE: 0.20,
-  BASE_HEALTH: 100000,
+  BASE_HEALTH: 10,
   BASE_HIT_CHANCE: 0.8,
   MEAT_HEAL: 8,
   MEDS_HEAL: 20,
@@ -76,23 +76,23 @@ var World = {
     'rifle': {
       verb: _('destroy'),
       type: 'ranged',
-      damage: 5000000000, //5
+      damage: 5, //5
       cooldown: 1,
-      cost: { 'bullets': 1 }
+      cost: { 'bullets': 0 }
     },
     'laser rifle': {
       verb: _('blast'),
       type: 'ranged',
       damage: 8,
       cooldown: 1,
-      cost: { 'energy cell': 1 }
+      cost: { 'energy cell': 0 }
     },
     'grenade': {
       verb: _('lob'),
       type: 'ranged',
       damage: 15,
       cooldown: 5,
-      cost: { 'grenade': 1 }
+      cost: { 'grenade': 0 }
     },
     'bolas': {
       verb: _('tangle'),
@@ -106,7 +106,7 @@ var World = {
       type: 'ranged',
       damage: 12,
       cooldown: 1,
-      cost: { 'energy cell': 1 }
+      cost: { 'energy cell': 0 }
     },
     'energy blade': {
       verb: _('slice'),

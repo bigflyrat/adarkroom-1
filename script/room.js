@@ -406,7 +406,8 @@ var Room = {
 			type: 'good',
 			cost: function () {
 				return {
-					'scales': 50, 'teeth': 30
+					//'scales': 50, 
+					'teeth': 0//30
 				};
 			},
 			audio: AudioLibrary.BUY_MEDICINE
@@ -424,8 +425,8 @@ var Room = {
 			type: 'good',
 			cost: function () {
 				return {
-					'scales': 10,
-					'teeth': 10
+					//'scales': 10,
+					'teeth': 0//10
 				};
 			},
 			audio: AudioLibrary.BUY_ENERGY_CELL
@@ -443,8 +444,8 @@ var Room = {
 			type: 'weapon',
 			cost: function () {
 				return {
-					'scales': 100,
-					'teeth': 50
+					//'scales': 100,
+					'teeth': 0//50
 				};
 			},
 			audio: AudioLibrary.BUY_GRENADES
